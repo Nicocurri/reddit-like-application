@@ -11,12 +11,15 @@
         <label for="link">Link:</label>
         <input name="link" #newlink class="form-control">
       </div>
-      <br>
     <button (click)="addArticle(newtitle, newlink)" class="btn btn-primary">
       Submit link
     </button>
   </form>
-   <app-article>
+</div>
 
-   </app-article>
+<div class="container">
+  <!-- start adding here -->
+  <app-article [article]="myArticle"></app-article>
+
+  <!-- end adding here -->
 </div>
